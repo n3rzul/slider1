@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Серега</title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+            rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="assets/css/">
+      <link rel="stylesheet" href="assets/fonts/icomoon.svg">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+      <div class="conatiner">
+
+            <div class="slider-container">
+                  <ul id="slides" class="slides">
+                        <div class="btn-conatiner">
+                              <div class=" icon-circle-left btn btn__arrow--left" onclick="carousel.clickPrevBtn()"></div>
+                              <div class="icon-pause2 btn btn__player--pause" onclick="carousel.isPlaying()"></div>
+                              <div class="icon-circle-right btn btn__arrow--right" onclick="carousel.clickNextBtn()"></div>
+                        </div>
+                        <div class="slides-nav">
+                              <div class="btn btn__slide btn--active"onclick = 'carousel.goToSlide(0)'>-</div>
+                              <div class="btn btn__slide"onclick = 'carousel.goToSlide(1)'>-</div>
+                              <div class="btn btn__slide"onclick = 'carousel.goToSlide(2)'>-</div>
+                              <div class="btn btn__slide"onclick = 'carousel.goToSlide(3)'>-</div>
+                              <div class="btn btn__slide"onclick = 'carousel.goToSlide(4)'>-</div>
+                        </div>
+                      
+                        <li class="slide active"></li>
+                        <li class="slide "></li>
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                        <li class="slide"></li>
+                  </ul>
+
+            </div>
+      </div>
+      <script src="assets/js/carousel.js"></script>
+      <script src="assets/js/main.js"></script>
+</body>
+
+</html>
